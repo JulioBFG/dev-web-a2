@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Orderfy</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/index.css" />
+</head>
+
+<body>
+	<header id="header">
+		<a href="home.html" class="logo">Orderfy</a>
+		<nav class="right">
+			<a href="login.html" class="button right">Entrar</a>
+			<a href="#" class="button right">Registre-se</a>
+		</nav>
+	</header>
+
+	<div id="contactTitle">
+		<h1>Logo entramos em contato! ;)</h1>
+		<p>Deixe aqui alguns dados para que possamos entrar em contato.</p>
+	</div>
+	<form id="contactForm" onsubmit="return validateForm ();">
+		<div id="externa">
+			<p>
+				<input type="text" name="nome" placeholder="Nome" id="nome"
+					style="border-top:1;border-right:1;border-left:1;width:300px;height:30px">
+			</p>
+
+			<p>
+				<input type="text" name="sobrenome" placeholder="Sobrenome" 
+					style="border-top:1;border-right:1;border-left:1;width:300px;height:30px">
+			</p>
+
+			<p>
+				<input type="number" name="phone" placeholder="DDD + Celular"	
+					style="border-top:1;border-right:1;border-left:1;width:300px;height:30px">
+			</p>
+
+			<p>
+				<!-- Caso o navegador seja antigo e não possua suporte ao HTML5 ele valida o email com o JS
+				por isso o type email foi alterado para text-->
+				<input type="text" name="email" placeholder="E-mail" 
+					style="border-top:1;border-right:1;border-left:1;width:300px;height:30px">
+			</p>
+
+			<select style="border-top:1;border-right:1;border-left:1;padding:1%;">
+				<option>Pessoa Física</option>
+				<option>Pessoa Jurídica</option>
+			</select>
+
+			
+			<select style="border-top:1;border-right:1;border-left:1;padding:0.9%;">
+				<option>Nosso sistema</option>
+				<option>Dúvidas internas</option>
+				<option>Trabalhe conosco</option>
+				<option>Outro</option>
+			</select>
+			
+			<div id="informacoes">
+				<textarea id="textinfo" rows="10" cols="40" type="textarea" name="info" placeholder="Informações..."
+					style="resize:vertical;; margin:1%;margin-left:0.8%;"></textarea>
+			</div>
+			<!--<div> <a href="#" class="button right">Enviar</a> </div> -->
+			<!--<button class = "button rigth" type="submit" name ="submit" value="Enviar" > -->
+			<input class="button" type="submit" name ="submit" value="Enviar">
+
+			
+		</div>
+		
+		<script type="text/javascript" src="js/contato.js"></script>
+
+	</form>
+	<br>
+	<footer id="footer">
+		<div class="inner">
+			<ul class="actions">
+				<li class="icon">
+					<a href="home.html" class="button contact">Home</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+
+</html>

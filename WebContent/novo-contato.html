@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<title>Orderfy</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="assets/css/index.css" />
+</head>
+
+<body>
+	<header id="header">
+		<a href="home.html" class="logo">Orderfy</a>
+		<nav class="right"> </nav>
+	</header>
+
+	<form action="/desenvolvweb/novo-contato" method="POST">
+		<div id="externa">
+			<p>
+				<input type="text" name="nome" placeholder="Nome" id="nome"
+					style="border-top: 1; border-right: 1; border-left: 1; width: 300px; height: 30px">
+			</p>
+			<p>
+				<input type="text" name="sobrenome" placeholder="Sobrenome"
+					style="border-top: 1; border-right: 1; border-left: 1; width: 300px; height: 30px">
+			</p>
+			<p>
+				<input type="number" name="telefone" id="telefone"
+					placeholder="DDD + Celular"
+					style="border-top: 1; border-right: 1; border-left: 1; width: 300px; height: 30px">
+			</p>
+			<p>
+				<!-- Caso o navegador seja antigo e não possua suporte ao HTML5 ele valida o email com o JS
+				por isso o type email foi alterado para text-->
+				<input type="text" name="email" placeholder="E-mail"
+					style="border-top: 1; border-right: 1; border-left: 1; width: 300px; height: 30px">					
+			</p>
+			<p>
+				<input type="password" name="senha" placeholder="Senha"
+					style="border-top: 1; border-right: 1; border-left: 1; width: 300px; height: 30px">
+			</p>
+			<input class="button" type="submit" name="submit" value="Enviar">
+		</div>
+
+	</form>
+	<br>
+	<footer id="footer">
+		<div class="inner">
+			<ul class="actions">
+				<li class="icon"><a href="home.html" class="button contact">Home</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

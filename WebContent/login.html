@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Orderfy</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+</head>
+<header id="header">
+    <a href="home.html" class="logo">Orderfy</a>
+</header>
+
+<body>
+    <form method="post" action="/desenvolvweb/submit-form">
+
+        <div class="form_Login">
+            <div class="login_box">
+                <input type="text" placeholder="Login" name="login" class="login_box">
+                <input type="password" placeholder="Senha" name="password" class="login_box">
+            </div>
+            <div>
+                <!-- <input type="button" name="login_login" id="login_login" onclick="validarLogin(login.value,password.value)" value="Acessar" class="loginButton"> -->
+                <button type="submit">Acessar</button>
+            </div>
+            <a href="#lostPass" onclick="document.getElementById('forgot_pass').style.display='block'">Forgot Password ?</a>
+        </div>
+    </form>
+    <script type= "text/javascript" src= "js/contato.js"></script>
+    <script type= "text/javascript" src= "./js/login.js"></script>
+</body>
